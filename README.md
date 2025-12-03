@@ -223,6 +223,12 @@ O site ficou disponível publicamente via endpoint do S3.
 
 ---
 
+## 🏗️ Arquitetura do laboratório
+
+![arquitetura lab](imagens/arquitetura.png)
+
+--
+
 ## ✔️ Conclusão
 
 Ao final do laboratório, consegui:
