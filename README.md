@@ -34,9 +34,9 @@ Atividade realizada durante o programa **AWS re/Start – Escola da Nuvem**.
 
 ```
 s3-static-website-lab/
-├── imagens/        # Prints organizados por tarefa
-├── update-website.sh   # Script de automação de deploy
-└── README.md
+├── imagens/
+├── README.md
+└── update-website.sh
 ```
 
 ---
