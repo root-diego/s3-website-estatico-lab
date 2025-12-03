@@ -68,7 +68,7 @@ Configurei as credenciais temporárias, região e formato de saída:
 aws configure
 ```
 
-![aws configure](imagens/task2-aws-configure.png)
+![ssm](imagens/task1-ssm.png)
 
 ---
 
