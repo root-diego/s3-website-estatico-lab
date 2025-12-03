@@ -56,7 +56,7 @@ sudo su -l ec2-user
 pwd
 ```
 
-imagens/(task1-ssm.png)
+(imagens/task1-ssm.png)
 
 ---
 
@@ -68,7 +68,7 @@ Configurei as credenciais temporárias, região e formato de saída:
 aws configure
 ```
 
-imagens/(task2-aws-configure.png)
+(imagens/task2-aws-configure.png)
 
 ---
 
@@ -82,7 +82,7 @@ aws s3api create-bucket --bucket diego2510 \
  --create-bucket-configuration LocationConstraint=us-west-2
 ```
 
-imagens/(task3-create-bucket-&-iam-user.png)
+(imagens/task3-create-bucket-&-iam-user.png)
 
 ---
 
@@ -106,7 +106,7 @@ Descobri a policy S3 Full Access:
 aws iam list-policies --query "Policies[?contains(PolicyName,'S3')]"
 ```
 
-imagens/(task4-list-policies.png)
+(imagens/task4-list-policies.png)
 
 Anexei a política ao usuário:
 
@@ -126,7 +126,7 @@ Para permitir acesso público via web:
 * Ativei ACLs
 * Salvei alterações
 
-imagens/(task5-allow-public-acess.png)
+(imagens/task5-allow-public-acess.png)
 
 ---
 
@@ -141,7 +141,7 @@ cd static-website
 ls
 ```
 
-imagens/(task6-tar.png)
+(imagens/task6-tar.png)
 
 ---
 
@@ -160,7 +160,7 @@ aws s3 cp /home/ec2-user/sysops-activity-files/static-website/ \
  s3://diego2510/ --recursive --acl public-read
 ```
 
-imagens/(task7-aws-s3-ls.png)
+(imagens/task7-aws-s3-ls.png)
 
 ---
 
@@ -193,7 +193,7 @@ Atualizei o site:
 ./update-website.sh
 ```
 
-imagens/(task8-script.png)
+(imagens/task8-script.png)
 
 ---
 
@@ -209,7 +209,7 @@ aws s3 sync /home/ec2-user/sysops-activity-files/static-website/ \
 🧪 Resultado:
 Apenas arquivos modificados foram enviados → **deploy mais rápido e eficiente**
 
-imagens/(task9-s3-sync.png)
+(imagens/task9-s3-sync.png)
 
 ---
 
@@ -217,9 +217,9 @@ imagens/(task9-s3-sync.png)
 
 O site ficou disponível publicamente via endpoint do S3.
 
-imagens/(task10-site-pt1.png)
+(imagens/task10-site-pt1.png)
 
-imagens/(task11-site-pt2.png)
+(imagens/task11-site-pt2.png)
 
 ---
 
